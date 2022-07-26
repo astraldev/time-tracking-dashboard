@@ -1,7 +1,11 @@
 module.exports = {
   content: [
     "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
+    "./src/**/*.{vue,js,ts,jsx,tsx}"
+  ],
+  safelist: [
+    'bg-light-red-2', 'bg-light-red-1', 'bg-blue-primary', 'bg-soft-blue',
+    'bg-lime-green', 'bg-violet', 'bg-soft-orange'
   ],
   theme: {
     extend: {
@@ -17,6 +21,10 @@ module.exports = {
         'dark-blue': 'hsl(235, 46%, 20%)',
         'desaturated-blue': 'hsl(235, 45%, 61%)',
         'pale-blue': 'hsl(236, 100%, 87%)'
+      },
+      'padding': {
+        'x-spacing': '2rem',
+        'y-spacing': '1.25rem',
       }
     },
   },
